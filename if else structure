@@ -1,0 +1,21 @@
+echo "# c-language" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Deeksha0011/c-language.git
+git push -u origin main
+#include <stdio.h>
+
+int main() {
+   char letter;
+   printf("enter:");
+   scanf("%c",&letter);
+   if( letter=='a'|| letter=='A'|| letter=='e'|| letter=='E'||
+   letter=='i'|| letter=='I'|| letter=='o'|| letter=='O'|| letter=='u'|| letter=='U')
+   printf("vowel");
+   else
+   printf("consonant");
+
+    return 0;
+}
